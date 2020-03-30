@@ -1,10 +1,12 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './Layout';
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      <h1>Tyler Fann Portfolio</h1>
-    </div>
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
   );
 }
 
