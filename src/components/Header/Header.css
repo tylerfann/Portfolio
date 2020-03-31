@@ -1,0 +1,10 @@
+@media (min-width: 600px) {
+  .open-side-drawer-btn {
+    display: none;
+  }
+}
+
+.open-side-drawer-btn {
+  background-color: rosybrown;
+  padding: 10px;
+}

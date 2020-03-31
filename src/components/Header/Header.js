@@ -1,19 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import NavLinks from '../NavLinks/NavLinks';
+import './Header.css';
 
 const Header = (props) => {
   return (
     <div>
       <h1>Tyler Fann Portfolio</h1>
-      <nav>
-        <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/resume'>Resume</Link></li>
-          {/* <li><a href="/">Projects</a></li>
-          <li><a href="/">Social</a></li>
-          <li><a href="/">Email</a></li> */}
-        </ul>
-      </nav>
+      <NavLinks />
+      <button className='open-side-drawer-btn' onClick={props.openSideDrawer}>open side drawer</button>
     </div>
   );
 }
