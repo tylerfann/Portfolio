@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
-import Backdrop from '../../components/SideDrawer/Backdrop/Backdrop';
-
 
 class ScreenWrapper extends Component {
   constructor(props) {
@@ -23,17 +21,15 @@ class ScreenWrapper extends Component {
 
   render() {
     const { showSideDrawer } = this.state;
-
-    const sideDrawer = (
-      <React.Fragment>
-        <SideDrawer closeSideDrawer={this.closeSideDrawer} />
-        <Backdrop closeSideDrawer={this.closeSideDrawer}/>
-      </React.Fragment>
-    );
     return (
       <div>
-        <Header openSideDrawer={this.openSideDrawer} />
-        {showSideDrawer && sideDrawer}
+        <SideDrawer
+          close={this.closeSideDrawer}
+          show={showSideDrawer}
+        />
+        <Header
+          openSideDrawer={this.openSideDrawer}
+        />
         {this.props.children}
         <Footer />
       </div>

@@ -9,3 +9,18 @@
   background-color: rgba(0, 0, 0, .5);
   z-index: 50;
 }
+
+.backdrop-enter {
+  opacity: 0;
+}
+.backdrop-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.backdrop-exit {
+  opacity: 1;
+}
+.backdrop-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
