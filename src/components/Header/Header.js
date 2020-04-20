@@ -1,15 +1,17 @@
 import React from 'react';
-import NavLinks from '../NavLinks/NavLinks';
 import './Header.css';
+import NavTabs from '../NavTabs/NavTabs';
+import MenuIcon from '../../assets/images/hamburger-icon.svg';
 
 const Header = (props) => {
   const { openSideDrawer } = props;
+
   return (
-    <div>
-      <h1>Tyler Fann Portfolio</h1>
-      <NavLinks />
-      <button className='open-side-drawer-btn' onClick={openSideDrawer}>open side drawer</button>
-    </div>
+    <header className='header-container'>
+      <NavTabs />
+      <h1 className='header-logo'>TF</h1>
+      <img src={MenuIcon} alt='menu icon' className='open-side-drawer-btn' onClick={openSideDrawer} />
+    </header>
   );
 }
 

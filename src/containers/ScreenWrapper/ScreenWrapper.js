@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
+import './ScreenWrapper.css';
 
 class ScreenWrapper extends Component {
   constructor(props) {
