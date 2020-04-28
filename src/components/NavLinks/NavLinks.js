@@ -4,13 +4,10 @@ import './NavLinks.css';
 
 const NavLinks = (props) => {
   return (
-    <nav className='nav-links'>
+    <nav className='nav-links-container'>
       <ul>
-        <li><Link to='/' onClick={props.closeSideDrawer}>Home</Link></li>
-        <li><Link to='/resume' onClick={props.closeSideDrawer}>Resume</Link></li>
-        {/* <li><a href="/">Projects</a></li>
-    <li><a href="/">Social</a></li>
-    <li><a href="/">Email</a></li> */}
+        <li className='nav-link-text'><Link to='/' onClick={props.closeSideDrawer} className='nav-link-text'>Home</Link></li>
+        <li className='nav-link-text'><Link to='/resume' onClick={props.closeSideDrawer} className='nav-link-text'>Resume</Link></li>
       </ul>
     </nav>
   );

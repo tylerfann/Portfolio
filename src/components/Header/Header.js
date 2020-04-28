@@ -9,7 +9,7 @@ const Header = (props) => {
   return (
     <header className='header-container'>
       <NavTabs />
-      <h1 className='header-logo'>TF</h1>
+      <p className='header-logo'>TF</p>
       <img src={MenuIcon} alt='menu icon' className='open-side-drawer-btn' onClick={openSideDrawer} />
     </header>
   );
